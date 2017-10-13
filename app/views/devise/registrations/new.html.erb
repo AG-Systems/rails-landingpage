@@ -1,0 +1,39 @@
+<div class="breaker"></div>
+<div class="container is-fluid">
+    <div style="margin: 0 auto; text-align: center;">
+      <%= render :template => "landing/_title" %>   
+      <br/>
+      <b style="font-size: 20px;">Hello! You caught us before we are ready.</b>
+      <p>Blah blah blah</p>
+      <div class="breaker-small"></div>
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= devise_error_messages! %>
+      
+        <div class="field">
+          <%= f.label :email, class: "bigger-text" %><br />
+          <%= f.email_field :email, autofocus: true, :required => true, class: "bigger-input" %>
+        </div>
+        <!--
+        <div class="field">
+          <%= f.label :password %>
+          <% if @minimum_password_length %>
+          <em>(<%= @minimum_password_length %> characters minimum)</em>
+          <% end %><br />
+          <%= f.password_field :password, autocomplete: "off" %>
+        </div>
+      
+        <div class="field">
+          <%= f.label :password_confirmation %><br />
+          <%= f.password_field :password_confirmation, autocomplete: "off" %>
+        </div>
+      -->
+        <div class="actions">
+          <%= f.submit "Sign up", class: "button is-primary" %>
+        </div>
+      <% end %>
+      <!--
+      <%= render "devise/shared/links" %>
+      
+      -->
+      </div>
+</div>

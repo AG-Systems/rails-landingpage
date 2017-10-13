@@ -1,0 +1,41 @@
+// Place all the styles related to the landing controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+    body{
+        background-color: #fbfbfa;
+        
+    }
+    p
+    {
+        font-size: 25px;
+    }
+    li
+    {
+        font-size: 25px;
+    }
+    .breaker
+    {
+        width: 100%;
+        height: 100px;
+    }
+    .breaker-small
+    {
+        width: 100%;
+        height: 50px;        
+    }
+    .button
+    {
+        font-size: 23px;
+    }
+    html, body {
+        margin: 0;
+        height: 100%;
+    }
+    .bigger-text
+    {
+        font-size: 20px;
+    }
+    .bigger-input
+    {
+        width: 320px;
+    }

@@ -1,0 +1,27 @@
+<!-- <img src=""/> -->
+<!-- If you want a logo -->
+<div class="breaker"></div>
+<div class="container is-fluid">
+    <div style="margin: 0 auto; text-align: center;">
+        <%= render :template => "landing/_title" %>   
+        <p>How it works</p>
+        <br/>
+        <ul>
+            <li>Step 1</li>
+            <li>Step 2</li>
+            <li>Step 3</li>
+        </ul>
+        <br/>
+        
+        <% if user_signed_in? %>
+                <p>Thank you for signing up!</p>
+                
+                <a class="button is-danger" href="new">Click here to register another user</a>
+                
+                
+        <% else %>
+        
+                <a class="button is-primary" href="plans">Plans and Pricing</a>
+        <% end %>
+    </div>
+</div>
